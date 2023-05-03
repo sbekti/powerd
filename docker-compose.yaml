@@ -1,0 +1,17 @@
+version: "3.9"
+
+networks:
+  backend:
+    name: backend
+    external: true
+
+services:
+  powerd:
+    build: .
+    privileged: true
+    ports:
+      - "9877:9877"
+    restart: "always"
+    networks:
+      - backend
+

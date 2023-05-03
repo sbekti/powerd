@@ -1,0 +1,4 @@
+minimalmodbus==2.0.1
+prometheus-client==0.16.0
+pyserial==3.5
+python-dds238==0.0.5
